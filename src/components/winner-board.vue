@@ -5,7 +5,7 @@
       Alpha 1.0 - Rise in Style
       <button class="common" v-if="!expanded" @click="expanded = true"> &#11167</button>
       <button class="common" v-if="expanded" @click="expanded = false"> &#11165</button>
-      <div class="detail-winner" :class="expanded ? 'detail-winner-hidden' : ''">
+      <div class="detail-winner" :class="!expanded ? 'detail-winner-hidden' : ''">
         <div class="detail-item">
           <div class="detail-label">Winner:</div>
           <div class="detail-content">Rise in Style (Player)</div>
