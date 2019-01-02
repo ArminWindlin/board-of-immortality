@@ -37,7 +37,7 @@
     background-size: contain;
     width: 613px;
     height: 124px;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
   }
 
   @media (max-width: 768px) {

@@ -1,7 +1,7 @@
 <template>
   <div class="window-container">
     <div class="empty window">
-      <div class="title">Cosmos Winners</div>
+      <div class="title">World Winners</div>
       Alpha 1.0 - Rise in Style
       <button class="common" v-if="!expanded" @click="expanded = true"> &#11167</button>
       <button class="common" v-if="expanded" @click="expanded = false"> &#11165</button>
@@ -11,7 +11,7 @@
           <div class="detail-content">Rise in Style (Player)</div>
         </div>
         <div class="detail-item">
-          <div class="detail-label">Cosmos Duration:</div>
+          <div class="detail-label">Duration:</div>
           <div class="detail-content">5 Days</div>
         </div>
         <div class="detail-item">
