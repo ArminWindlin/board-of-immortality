@@ -137,15 +137,17 @@
     #final-report {
       display: none;
     }
-
-    @keyframes appear {
-    }
   }
 
   @media (max-width: 768px) {
     .empty {
       top: 80px;
       height: 80%;
+    }
+
+    @keyframes appear {
+      from {height: 0}
+      to {height: 104px}
     }
   }
 
