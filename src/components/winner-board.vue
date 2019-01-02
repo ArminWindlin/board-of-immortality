@@ -3,8 +3,10 @@
     <div class="empty window">
       <div class="title">World Winners</div>
       Alpha 1.0 - Rise in Style
-      <button class="common" v-if="!expanded" @click="expanded = true"> &#11167</button>
-      <button class="common" v-if="expanded" @click="expanded = false"> &#11165</button>
+      <button class="common" v-if="!expanded && !mobile" @click="expanded = true">&#11167</button>
+      <button class="common" v-if="expanded && !mobile" @click="expanded = false">&#11165</button>
+      <button class="common" v-if="!expanded && mobile" @click="expanded = true">i</button>
+      <button class="common" v-if="expanded && mobile" @click="expanded = false">x</button>
       <div class="detail-winner" :class="!expanded ? 'detail-winner-hidden' : ''">
         <div class="detail-item">
           <div class="detail-label">Winner:</div>
@@ -38,7 +40,11 @@
         expanded: false
       }
     },
-    computed: {},
+    computed: {
+      mobile: () => {
+        return window.mobile;
+      }
+    },
     methods: {},
     beforeMount() {
     }
@@ -70,6 +76,7 @@
     background: #BEA141;
     color: white;
     height: 20px;
+    width: 20px;
     line-height: 10px;
   }
 
@@ -132,8 +139,6 @@
     }
 
     @keyframes appear {
-      from {height: 0}
-      to {height: 120px}
     }
   }
 
