@@ -112,13 +112,13 @@
       height: 0
     }
     to {
-      height: 423px
+      height: 464px
     }
   }
 
   @keyframes disappear {
     from {
-      height: 423px;
+      height: 464px;
       display: block
     }
     to {
