@@ -1,20 +1,34 @@
 <template>
-  <div class="window-container">
-    <div class="empty window">
-      <div class="title">World Winners</div>
-      <winner_1_1></winner_1_1>
-      <winner_1_0></winner_1_0>
+  <div class="winner">
+    Alpha 1.0 - Rise in Style
+    <button class="common" v-if="!expanded && !mobile" @click="expanded = true">&#11167</button>
+    <button class="common" v-if="expanded && !mobile" @click="expanded = false">&#11165</button>
+    <button class="common" v-if="!expanded && mobile" @click="expanded = true">i</button>
+    <button class="common" v-if="expanded && mobile" @click="expanded = false">x</button>
+    <div class="detail-winner" :class="!expanded ? 'detail-winner-hidden' : ''">
+      <div class="detail-item">
+        <div class="detail-label">Winner:</div>
+        <div class="detail-content">Rise in Style (Player)</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Duration:</div>
+        <div class="detail-content">5 Days</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">End Date:</div>
+        <div class="detail-content">31.12.2018</div>
+      </div>
+      <div id="final-report"></div>
     </div>
   </div>
 </template>
 
 <script>
-  import Winner_1_0 from "./winners/winner_1_0.vue";
-  import Winner_1_1 from "./winners/winner_1_1.vue";
+  //import SkillTree from "./skillTree.vue";
 
   export default {
-    name: 'winner-board',
-    components: {Winner_1_0, Winner_1_1},
+    name: 'winner_1_0',
+    components: {},
     props: [],
     data() {
       return {
@@ -32,25 +46,10 @@
   }
 </script>
 
-<!--<style scoped src="./field.css"></style>-->
 <style scoped>
-  .empty {
-    background: url(../assets/background3.png) center;
-    height: 70%;
-    left: 50%;
-    top: 150px;
-    margin-left: -40vw;
-    position: fixed;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.5);
-    overflow: auto;
-    color: #BEA141;
-  }
 
-  .title {
-    margin: 10px 0 20px 0;
-    font-weight: bold;
-    font-size: 20px;
+  .winner {
+    margin-bottom: 10px;
   }
 
   .common {
@@ -96,7 +95,7 @@
   }
 
   #final-report {
-    background: url(../assets/final-report.png) center no-repeat;
+    background: url(../../assets/final-report.png) center no-repeat;
     background-size: contain;
     margin: 10px auto;
     width: 800px;
