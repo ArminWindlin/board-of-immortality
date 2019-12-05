@@ -2,6 +2,7 @@
   <div class="window-container">
     <div class="empty window">
       <div class="title">World Winners</div>
+      <winner_2_0></winner_2_0>
       <winner_1_1></winner_1_1>
       <winner_1_0></winner_1_0>
     </div>
@@ -11,10 +12,11 @@
 <script>
   import Winner_1_0 from "./winners/winner_1_0.vue";
   import Winner_1_1 from "./winners/winner_1_1.vue";
+  import Winner_2_0 from "./winners/winner_2_0.vue";
 
   export default {
     name: 'winner-board',
-    components: {Winner_1_0, Winner_1_1},
+    components: {Winner_1_0, Winner_1_1, Winner_2_0},
     props: [],
     data() {
       return {

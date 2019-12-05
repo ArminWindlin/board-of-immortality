@@ -1,6 +1,6 @@
 <template>
   <div class="winner">
-    Alpha 1.1 - Dracarys
+    Beta 1.0 - Alpha
     <button class="common" v-if="!expanded && !mobile" @click="expanded = true">&#11167</button>
     <button class="common" v-if="expanded && !mobile" @click="expanded = false">&#11165</button>
     <button class="common" v-if="!expanded && mobile" @click="expanded = true">i</button>
@@ -8,30 +8,28 @@
     <div class="detail-winner" :class="!expanded ? 'detail-winner-hidden' : ''">
       <div class="detail-item">
         <div class="detail-label">Winner:</div>
-        <div class="detail-content">Dracarys (Team)</div>
+        <div class="detail-content">Alpha (Team)</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">Team members:</div>
-        <div class="detail-content">vladimirderbööse, afluffynoob, Leon, Ibexor</div>
+        <div class="detail-content">Ramsus, Eloxor, Blutwolf, hedgeh0g</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">Duration:</div>
-        <div class="detail-content">14 Days</div>
+        <div class="detail-content">27 Days</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">End Date:</div>
-        <div class="detail-content">10.03.2019</div>
+        <div class="detail-content">27.11.2019</div>
       </div>
-      <div id="final-report"></div>
     </div>
   </div>
 </template>
 
 <script>
-  //import SkillTree from "./skillTree.vue";
 
   export default {
-    name: 'winner_1_1',
+    name: 'winner_2_0',
     components: {},
     props: [],
     data() {
@@ -98,27 +96,18 @@
     text-align: left;
   }
 
-  #final-report {
-    background: url(../../assets/final_report_1_1.png) center no-repeat;
-    background-size: contain;
-    margin: 10px auto;
-    width: 800px;
-    height: 340px;
-    border-radius: 5px;
-  }
-
   @keyframes appear {
     from {
       height: 0
     }
     to {
-      height: 464px
+      height: 114px
     }
   }
 
   @keyframes disappear {
     from {
-      height: 464px;
+      height: 114px;
       display: block
     }
     to {
@@ -144,7 +133,7 @@
         height: 0
       }
       to {
-        height: 162px
+        height: 178px
       }
     }
   }
