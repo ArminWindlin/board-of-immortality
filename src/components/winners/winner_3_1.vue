@@ -1,6 +1,6 @@
 <template>
   <div class="winner">
-    Beta 2.0 - Alpha
+    Beta 2.0 - Vendetta
     <button class="common" v-if="!expanded && !mobile" @click="expanded = true">&#11167</button>
     <button class="common" v-if="expanded && !mobile" @click="expanded = false">&#11165</button>
     <button class="common" v-if="!expanded && mobile" @click="expanded = true">i</button>
@@ -8,23 +8,23 @@
     <div class="detail-winner" :class="!expanded ? 'detail-winner-hidden' : ''">
       <div class="detail-item">
         <div class="detail-label">Winner:</div>
-        <div class="detail-content">Alpha (Team)</div>
+        <div class="detail-content">Vendetta (Team)</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">Team members:</div>
-        <div class="detail-content">Ramsus, Eloxor, Pauton, Eastcrime</div>
+        <div class="detail-content">Milomachi, Hellodudes, LesbianMango, WarHammer</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">World:</div>
-        <div class="detail-content">Zeduvis3</div>
+        <div class="detail-content">Zeduvis4</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">Duration:</div>
-        <div class="detail-content">6 Days</div>
+        <div class="detail-content">9 Days</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">End Date:</div>
-        <div class="detail-content">05.06.2020</div>
+        <div class="detail-content">12.06.2020</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">World Type:</div>
@@ -37,7 +37,7 @@
 <script>
 
   export default {
-    name: 'winner_3_0',
+    name: 'winner_3_1',
     components: {},
     props: [],
     data() {
