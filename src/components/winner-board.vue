@@ -2,6 +2,7 @@
   <div class="window-container">
     <div class="empty window">
       <div class="title">World Winners</div>
+      <winner_3_2></winner_3_2>
       <winner_3_1></winner_3_1>
       <winner_3_0></winner_3_0>
       <winner_2_1></winner_2_1>
@@ -19,10 +20,11 @@
   import Winner_2_1 from "./winners/winner_2_1";
   import Winner_3_0 from './winners/winner_3_0';
   import Winner_3_1 from './winners/winner_3_1';
+  import Winner_3_2 from './winners/winner_3_2';
 
   export default {
     name: 'winner-board',
-    components: {Winner_3_1, Winner_3_0, Winner_1_0, Winner_1_1, Winner_2_0, Winner_2_1},
+    components: {Winner_3_2, Winner_3_1, Winner_3_0, Winner_1_0, Winner_1_1, Winner_2_0, Winner_2_1},
     props: [],
     data() {
       return {
