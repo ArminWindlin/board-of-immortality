@@ -2,6 +2,7 @@
   <div class="window-container">
     <div class="empty window">
       <div class="title">World Winners</div>
+      <winner_3_7></winner_3_7>
       <winner_3_6></winner_3_6>
       <winner_3_5></winner_3_5>
       <winner_3_4></winner_3_4>
@@ -29,10 +30,12 @@
   import Winner_3_4 from './winners/winner_3_4';
   import Winner_3_5 from './winners/winner_3_5';
   import Winner_3_6 from './winners/winner_3_6';
+  import Winner_3_7 from './winners/winner_3_7';
 
   export default {
     name: 'winner-board',
     components: {
+      Winner_3_7,
       Winner_3_6,
       Winner_3_5,
       Winner_3_4,
