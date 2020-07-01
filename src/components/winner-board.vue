@@ -2,6 +2,8 @@
   <div class="window-container">
     <div class="empty window">
       <div class="title">World Winners</div>
+      <winner_3_9></winner_3_9>
+      <winner_3_8></winner_3_8>
       <winner_3_7></winner_3_7>
       <winner_3_6></winner_3_6>
       <winner_3_5></winner_3_5>
@@ -31,10 +33,14 @@
   import Winner_3_5 from './winners/winner_3_5';
   import Winner_3_6 from './winners/winner_3_6';
   import Winner_3_7 from './winners/winner_3_7';
+  import Winner_3_8 from './winners/winner_3_8';
+  import Winner_3_9 from './winners/winner_3_9';
 
   export default {
     name: 'winner-board',
     components: {
+      Winner_3_9,
+      Winner_3_8,
       Winner_3_7,
       Winner_3_6,
       Winner_3_5,
@@ -70,6 +76,7 @@
     box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.5);
     overflow: auto;
     color: #BEA141;
+    padding: 0 20px;
   }
 
   .title {
@@ -157,8 +164,11 @@
 
   @media (max-width: 768px) {
     .empty {
+      position: fixed;
       top: 80px;
-      height: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0
     }
 
     @keyframes appear {
