@@ -1,6 +1,6 @@
 <template>
   <div class="winner">
-    Beta 2.0 - Da Squad
+    Beta 2.0 - 🌭 🌭 🌭
     <button class="common" v-if="!expanded && !mobile" @click="expanded = true">&#11167</button>
     <button class="common" v-if="expanded && !mobile" @click="expanded = false">&#11165</button>
     <button class="common" v-if="!expanded && mobile" @click="expanded = true">i</button>
@@ -8,15 +8,15 @@
     <div class="detail-winner" :class="!expanded ? 'detail-winner-hidden' : ''">
       <div class="detail-item">
         <div class="detail-label">Winner:</div>
-        <div class="detail-content">Da Squad (Team)</div>
+        <div class="detail-content">🌭 🌭 🌭 (Team)</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">Team members:</div>
-        <div class="detail-content">DonQuanto, Aardvark, Telphat, ChaosMudkip</div>
+        <div class="detail-content">GirthyWeiner, Netnietniks, Jimbezz, ßénjåmín</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">World:</div>
-        <div class="detail-content">Kronos13</div>
+        <div class="detail-content">Kronos14</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">Duration:</div>
@@ -24,7 +24,7 @@
       </div>
       <div class="detail-item">
         <div class="detail-label">End Date:</div>
-        <div class="detail-content">03.07.2020</div>
+        <div class="detail-content">05.07.2020</div>
       </div>
       <div class="detail-item">
         <div class="detail-label">World Type:</div>
